@@ -56,13 +56,13 @@ app.post('/films', (req,res) => { // allows adding of films
 } )
 
 app.patch('/films/:id', (req,res) => { // update
-    const id = parseInt(req.params.id, 10); // Parse the ID from the URL params
+    const id = parseInt(req.params.id, 10); 
 
-    const existingFilm = films.find((fruit) => film.id === id);
+    const existingFilm = films.find((film) => film.id === id);
   
     if (!existingFilm) {
-      // If the fruit with the specified ID doesn't exist, return a 404 response.
-      res.status(404).send({ error: `cannot update missing fruit` });
+
+      res.status(404).send({ error: `cannot update missing film` });
     }
   
    else if (req.body.name===undefined) {
