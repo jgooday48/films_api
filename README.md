@@ -1,2 +1,2 @@
 # make_api
-This is api which concerns films and their year of release. Films can be added, updated and deleted from the json file using hopscotch.io
+This is api which concerns films and their year of release. Films can be added, updated and deleted from the json file using hoppscotch.io. To run it please run index.js in the console, then go to http://localhost:3000/films. POST, UPDATE and DELETE commands can be done in hoppscotch.io. To update or delete a film, make sure to specify the index of it in the http to the right of send on hoppscotch.io.
