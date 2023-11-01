@@ -2,7 +2,6 @@ const express = require('express')
 const cors = require('cors')
 const films = require('./films.json')
 const logger = require('./logger')
-
 const app = express()
 
 // MIDDLEWARE
@@ -62,7 +61,7 @@ app.patch('/films/:id', (req,res) => { // update
   
     if (!existingFilm) {
 
-      res.status(404).send({ error: `cannot update missing film` });
+      res.status(404).send({ error: 'cannot update missing film' });
     }
   
    else if (req.body.name===undefined) {
