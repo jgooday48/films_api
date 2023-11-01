@@ -60,8 +60,7 @@ app.patch('/films/:id', (req,res) => { // update
 
     const existingFilm = films.find((film) => film.id === id); //finds if index exists
   
-    if (!existingFilm) {
- 
+    if (!existingFilm) { // throws error if index does not exist
       res.status(404).send({ error: 'cannot update missing film' });
     }
   
