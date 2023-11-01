@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Lawrence of Arabia",
+        "year" :1962,
+        "id": 1
+    },
+    {
+        "name": "Oppenheimer",
+        "year": 2023,
+        "id": 2
+    },
+    {
+        "name": "Scarface",
+        "year": 1983,
+        "id": 3
+    },
+    {
+        "name": "Inception",
+        "year": 2010,
+        "id": 4
+    }
+]
