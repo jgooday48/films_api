@@ -70,7 +70,7 @@ app.patch('/films/:id', (req,res) => { // update
    else{
     existingFilm.name = req.body.name; 
   
-    res.status(200).json(existingFilm); }
+    res.status(200).send(existingFilm); }
 })
 
 app.delete('/films/:id', (req,res) => { //delete
