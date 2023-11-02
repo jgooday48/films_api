@@ -77,7 +77,7 @@ app.delete('/films/:id', (req,res) => { //delete
   const deletedFilmIndex = films.findIndex((film) => film.id === id); //finds if index exists
 
   if (deletedFilmIndex === -1) { //checks if user selected an index not in the file
-    return res.status(404).send({ error: `Film with id ${id} not found` });
+    res.status(404).send({ error: `Film with id ${id} not found` });
   }
 
   films.splice(deletedFilmIndex, 1); // deletes film requested by index
